@@ -1,6 +1,6 @@
 {
-  "name": "mern-model-generator",
-  "version": "1.0.41",
+  "name": "mongoose-model-templates",
+  "version": "1.0.45",
   "description": "generates boiler-plate model files for mern stack",
   "main": "index.js",
   "directories": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laurawalters2/model-generator.git"
+    "url": "git+https://github.com/laurawalters2/mongoose-model-templates.git"
   },
   "keywords": [
     "mern"
@@ -21,9 +21,9 @@
   "author": "laurawalters1",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/laurawalters2/model-generator/issues"
+    "url": "https://github.com/laurawalters2/mongoose-model-templates/issues"
   },
-  "homepage": "https://github.com/laurawalters2/model-generator#readme",
+  "homepage": "https://github.com/laurawalters2/mongoose-model-templates#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
     "minimist": "^1.2.6"
