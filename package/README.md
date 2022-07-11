@@ -1,3 +1,9 @@
+Installation:
+
+```javascript
+npm i mongoose-model-templates
+```
+
 Run the following command in the server directory to generate a template mern model (replace 'User' with your model name)
 
 ```javascript
@@ -15,17 +21,17 @@ const { Schema, model } = require("mongoose");
 const moment = require("moment");
 
 const userSchema = new Schema(
-	{
-		createdAt: {
-			type: Date,
-			default: Date.now,
-		},
-	},
-	{
-		toJSON: {
-			virtuals: true,
-		},
-	}
+  {
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
+  },
+  {
+    toJSON: {
+      virtuals: true,
+    },
+  }
 );
 
 const User = model("User", userSchema);
