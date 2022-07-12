@@ -39,4 +39,4 @@ const User = model("User", userSchema);
 module.exports = User;
 ```
 
-Model exports still need to be added to you models/index.js file manually
+Model exports still need to be added to your models/index.js file manually
