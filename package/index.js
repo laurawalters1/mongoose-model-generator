@@ -33,18 +33,11 @@ if (!fs.existsSync("../../models")) {
 }
 // !
 if (!fs.existsSync("../../models/index.js") && x) {
-	fs.writeFileSync("../../models/index.js", ``);
-}
-// !
-fs.writeFile(`../../models/${name}.js`, data, (err) => {
-	if (err) {
-		console.error(err);
-	}
-	// file written successfully
-});
-
-// !
-if (x) {
+	fs.writeFileSync(
+		"../../models/index.js",
+		`const ${name} = require("./${name}");\n\nmodule.exports = {\n    ${name},\n};`
+	);
+} else if (x) {
 	let testData;
 	fs.readFile("../../models/index.js", "utf8", (err, data) => {
 		testData = data;
@@ -64,4 +57,15 @@ if (x) {
 		);
 	});
 }
+
+// !
+fs.writeFile(`../../models/${name}.js`, data, (err) => {
+	if (err) {
+		console.error(err);
+	}
+	// file written successfully
+});
+
+// !
+
 // !

@@ -1,10 +1,14 @@
+## Installation
+
 Install at the server level:
 
 ```javascript
 npm i mongoose-model-templates
 ```
 
-Run the following command in the server directory to generate a template mern model (replace 'User' with your model name)
+## Usage
+
+Run the following command in the server directory to generate a template mongoose model (replace 'User' with your model name)
 
 ```javascript
 npm run create:model -name=User
@@ -13,7 +17,30 @@ npm run create:model -name=User
 The file will be located in the models folder, if a models folder does not already exist, one will be created
 <br>
 <br>
-Output:
+
+## Flags
+
+Provided your index.js file takes the following format
+
+```javascript
+const Post = require("./Post");
+const Comment = require("./Comment");
+
+module.exports = {
+	Post,
+	Comment,
+};
+```
+
+You can add also the 'x' flag for model exports to be automatically added to your models/index.js
+
+```javascript
+npm run create:model -name=User -x
+```
+
+## Output:
+
+User.js:
 
 ```javascript
 const { Schema, model } = require("mongoose");
@@ -39,4 +66,16 @@ const User = model("User", userSchema);
 module.exports = User;
 ```
 
-Model exports still need to be added to your models/index.js file manually
+index.js:
+
+```javascript
+const User = require("./User");
+const Post = require("./Post");
+const Comment = require("./Comment");
+
+module.exports = {
+	Post,
+	Comment,
+	User,
+};
+```
