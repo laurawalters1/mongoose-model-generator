@@ -3,7 +3,7 @@ const { Schema, model } = require("mongoose");
 
 const moment = require("moment");
 
-const userSchema = new Schema(
+const test21Schema = new Schema(
   {
     createdAt: {
       type: Date,
@@ -18,6 +18,6 @@ const userSchema = new Schema(
 );
 
 
-const User = model("User", userSchema);
+const Test21 = model("Test21", test21Schema);
 
-module.exports = User;
+module.exports = Test21;
