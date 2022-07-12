@@ -31,7 +31,7 @@ module.exports = ${name};
 if (!fs.existsSync("../../models")) {
 	fs.mkdirSync("../../models");
 }
-// !
+
 if (!fs.existsSync("../../models/index.js") && x) {
 	fs.writeFileSync(
 		"../../models/index.js",
@@ -58,14 +58,9 @@ if (!fs.existsSync("../../models/index.js") && x) {
 	});
 }
 
-// !
 fs.writeFile(`../../models/${name}.js`, data, (err) => {
 	if (err) {
 		console.error(err);
 	}
 	// file written successfully
 });
-
-// !
-
-// !
