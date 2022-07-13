@@ -1,6 +1,4 @@
-const argv = require("minimist")(process.argv.slice(2));
 const fs = require("fs");
-const { parse } = require("path");
 const { npm_config_name: name, npm_config_x: x } = process.env;
 
 const data = `

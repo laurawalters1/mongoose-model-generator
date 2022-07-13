@@ -1,6 +1,6 @@
 {
   "name": "mongoose-model-templates",
-  "version": "1.1.8",
+  "version": "1.1.10",
   "description": "generates template files for mongoose models",
   "main": "index.js",
   "directories": {
@@ -16,7 +16,12 @@
     "url": "git+https://github.com/laurawalters2/mongoose-model-generator.git"
   },
   "keywords": [
-    "mongoose"
+    "mongoose",
+    "mern",
+    "model",
+    "template",
+    "generator",
+    "command"
   ],
   "author": "laurawalters1",
   "license": "ISC",
@@ -25,7 +30,6 @@
   },
   "homepage": "https://github.com/laurawalters2/mongoose-model-templates#readme",
   "dependencies": {
-    "fs": "^0.0.1-security",
-    "minimist": "^1.2.6"
+    "fs": "^0.0.1-security"
   }
 }
