@@ -32,7 +32,7 @@ module.exports = {
 };
 ```
 
-You can add also the 'x' flag for model exports to be automatically added to your models/index.js, if you do not already have an index file, one will be created
+You can also add the 'x' flag for model exports to be automatically added to your models/index.js, if you do not already have an index file, one will be created
 
 ```javascript
 npm run create:model -name=User -x
