@@ -41,9 +41,9 @@ if (!fs.existsSync("../../models/index.js") && x) {
 		testData = data;
 		let models = data.slice(data.indexOf("{") + 1, data.indexOf("}"));
 		let newModels = models.concat(`    ${name},`);
-		// let newData = data.replace(/\{{1}\n(.|\n)+\n\}{1}/gm, `{${newModels}}`);
+
 		let newData = data.replace(/\{(\d|\w|\s|,)+\}/gm, `{${newModels}\n}`);
-		// let newData = data.replace("const", `${newModels}`);
+
 		fs.writeFileSync(
 			"../../models/index.js",
 			`const ${name} = require("./${name}");\n${newData}`,
