@@ -1,6 +1,6 @@
 {
   "name": "mongoose-model-templates",
-  "version": "1.0.46",
+  "version": "1.0.47",
   "description": "generates boiler-plate model files for mern stack",
   "main": "index.js",
   "directories": {
